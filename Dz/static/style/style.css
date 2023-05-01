@@ -217,3 +217,11 @@ nav{
     transition-duration: 1s;
     transform: translateY(175px);
 }
+
+.block-anim {
+    width: 350px;
+    height: 350px;
+    background-color: #FFA800;
+    border-radius: 15px;
+    display: end;
+}
