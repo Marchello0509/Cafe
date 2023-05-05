@@ -252,43 +252,43 @@ nav{
 
 @keyframes block-anim {
     10% {
-        transform: rotate(360 deg);
+        transform: scale(3);
         color: rgb(255, 20, 59);
     }
     20% {
-        transform: rotate(360 deg);
+        transform: scale(6);
         color: deeppink;
     }
     30% {
-        transform: rotate(360 deg);
+        transform: scale(3);
         color: rgb(149, 20, 255);
     }
     40% {
-        transform: rotate(360 deg);
+        transform: scale(6);
         color: rgb(55, 20, 255);
     }
     50% {
-        transform: rotate(360 deg);
+        transform: scale(3);
         color: rgb(20, 181, 255);
     }
     60% {
-        transform: rotate(360 deg);
+        transform: scale(6);
         color: rgb(20, 255, 71);
     }
     70% {
-        transform: rotate(360 deg);
+        transform: scale(3);
         color: rgb(184, 255, 20);
     }
     80% {
-        transform: rotate(360 deg);
+        transform: scale(6);
         color: rgb(231, 255, 20);
     }
     90% {
-        transform: rotate(360 deg);
+        transform: scale(3);
         color: rgb(255, 94, 20);
     }
     100% {
-        transform: rotate(360 deg);
+        transform: scale(6);
         color: rgb(255, 20, 20);
     }
 }
