@@ -230,4 +230,65 @@ nav{
     height: 350px;
     background-color: #FFA800;
     border-radius: 15px;
+    transition-duration: 2.5s;
+}
+
+.p-anim {
+    color: #FFFFFF;
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.block-anim:hover {
+    animation-name: block-anim;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    transition-duration: 5s;
+}
+
+@keyframes block-anim {
+    10% {
+        transform: rotate(360 deg);
+        color: rgb(255, 20, 59);
+    }
+    20% {
+        transform: rotate(360 deg);
+        color: deeppink;
+    }
+    30% {
+        transform: rotate(360 deg);
+        color: rgb(149, 20, 255);
+    }
+    40% {
+        transform: rotate(360 deg);
+        color: rgb(55, 20, 255);
+    }
+    50% {
+        transform: rotate(360 deg);
+        color: rgb(20, 181, 255);
+    }
+    60% {
+        transform: rotate(360 deg);
+        color: rgb(20, 255, 71);
+    }
+    70% {
+        transform: rotate(360 deg);
+        color: rgb(184, 255, 20);
+    }
+    80% {
+        transform: rotate(360 deg);
+        color: rgb(231, 255, 20);
+    }
+    90% {
+        transform: rotate(360 deg);
+        color: rgb(255, 94, 20);
+    }
+    100% {
+        transform: rotate(360 deg);
+        color: rgb(255, 20, 20);
+    }
 }
