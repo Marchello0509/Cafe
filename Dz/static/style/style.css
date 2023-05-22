@@ -100,27 +100,35 @@ body {
 }
 
 .btnbuy {
-    background: #ffffff;
+    overflow: hidden;
+    position: relative;
     border-radius: 17px;
     font-weight: 600;
     font-size: 35px;
     line-height: 43px;
     text-align: center;
-    color: #000000;
-    border: none;
+    background: none;
+    border: 1px solid #FFA800;
     margin-left: 90px;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
+    z-index: 1;
+    color: #FFFFFF;
 }
 
-.btnbuy:hover {
-    border-radius: 17px;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 43px;
-    text-align: center;
-    color: #ffffff;
-    background: #FFA800;
-    transition-duration: 0.7s;
+.btnbuy:before {
+    content: "Заказать";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 0;
+    background-color: #FFA800;
+    transform: translateX(-140%);
+    transition-duration: 1s;
+}
+
+.btnbuy:hover::before {
+    transform: translateX(0);
 }
 
 .productname {
@@ -208,4 +216,78 @@ nav{
 .nav-btn:focus + .subnav-list{ 
     transition-duration: 1s;
     transform: translateY(175px);
+}
+
+.cont-anim {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.block-anim {
+    width: 350px;
+    height: 350px;
+    background-color: #FFA800;
+    border-radius: 15px;
+    transition-duration: 2.5s;
+}
+
+.p-anim {
+    color: #FFFFFF;
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.block-anim:hover {
+    animation-name: block-anim;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes block-anim {
+    10% {
+        transform: scale(1.2);
+        background-color: rgb(255, 20, 59);
+    }
+    20% {
+        
+        background-color: deeppink;
+    }
+    30% {
+        
+        background-color: rgb(149, 20, 255);
+    }
+    40% {
+        
+        background-color: rgb(55, 20, 255);
+    }
+    50% {
+        
+        background-color: rgb(20, 181, 255);
+    }
+    60% {
+        
+        background-color: rgb(20, 255, 71);
+    }
+    70% {
+        
+        background-color: rgb(184, 255, 20);
+    }
+    80% {
+        
+        background-color: rgb(231, 255, 20);
+    }
+    90% {
+        
+        background-color: rgb(255, 94, 20);
+    }
+    100% {
+        
+        background-color: rgb(255, 20, 20);
+    }
 }
