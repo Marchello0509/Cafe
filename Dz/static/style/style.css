@@ -291,3 +291,18 @@ nav{
         background-color: rgb(255, 20, 20);
     }
 }
+
+.block1 {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    width: 500px;
+    height: 500px;
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+}
